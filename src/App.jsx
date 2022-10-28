@@ -44,11 +44,24 @@ const App = () => {
           </p>
         </a>
         <a
-          href='https://training.zuri.team/'
-          className='w-full bg-white block text-center capitalize text-xl py-4'
-          id='btn__zuri'
+          href='https://background.zuri.team/'
+          className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
+          id='pitch'
         >
-          zuri team
+          background check for coders
+          <p className='text-sm pt-2 text-black/70'>
+            we help in doing background checks for all your coders
+          </p>
+        </a>
+        <a
+          href='https://books.zuri.team/design-rules'
+          className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
+          id='pitch'
+        >
+          Design books
+          <p className='text-sm pt-2 text-black/70'>
+            zuri helps in designing books for you
+          </p>
         </a>
       </section>
     </main>
