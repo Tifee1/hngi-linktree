@@ -1,6 +1,13 @@
 const App = () => {
   return (
     <main className='container max-w-5xl mx-auto grid my-10'>
+      <btn className='relative cursor-pointer'>
+        <img
+          src='https://linktree-clone-two.vercel.app/assets/share.035c8a2a.svg'
+          alt='share'
+          className='absolute top-[5%] left-[75%] border-dotted border-2 border-gray-500 rounded-full p-3 w-18 h-16'
+        />
+      </btn>
       <section>
         <img
           src='https://ca.slack-edge.com/T042F7V19Q8-U048G86FJ5Q-d9b51b6be328-512'
@@ -8,20 +15,21 @@ const App = () => {
           className='h-40 w-40 mx-auto rounded-full'
           id='profile__img'
         />
-        <p id='twitter' className='text-center text-3xl my-5'>
+        <p id='slack' className='text-center text-xl'>
           @tifee01
         </p>
+
         <p id='slack' className='hidden'>
           tifee
         </p>
       </section>
       <section className='mt-10'>
         <a
-          href='https://training.zuri.team/'
+          href='https://twitter.com/tifee01'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
           id='btn__zuri'
         >
-          zuri team
+          twitter link
         </a>
         <a
           href='http://books.zuri.team/'
@@ -63,7 +71,31 @@ const App = () => {
             zuri helps in designing books for you
           </p>
         </a>
+        <div className='flex justify-around w-[40%] mx-auto pt-8 pb-20'>
+          <img
+            src='https://linktree-clone-two.vercel.app/assets/slack.3d6ca7e6.svg'
+            alt='slack'
+          />
+          <img
+            src='https://linktree-clone-two.vercel.app/assets/github.6e0991a3.svg'
+            alt='github'
+          />
+        </div>
       </section>
+      <div className='bg-black/70 h-[1px] mt-5'></div>
+      <div className='md:flex justify-between px-4 py-7'>
+        <img
+          src='https://linktree-clone-two.vercel.app/assets/Zuri.Internship_Logo.fcf458d8.svg'
+          alt='zuri'
+          className='mb-3'
+        />
+        <p className='mb-3 text-lg'>HNG Internship 9 Frontend Task</p>
+        <img
+          src='https://linktree-clone-two.vercel.app/assets/I4G.ea8febd0.svg'
+          alt='ingressive'
+          className='mb-3'
+        />
+      </div>
     </main>
   )
 }
