@@ -35,41 +35,33 @@ const App = () => {
           href='http://books.zuri.team/'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
           id='books'
+          title=' find books about design and coding'
         >
           zuri books
-          <p className='text-sm pt-2 text-black/70'>
-            find books about design and coding
-          </p>
         </a>
         <a
           href='https://books.zuri.team/python-for-beginners?ref_id=tifee'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
           id='book__python'
+          title=' buy python book from zuri'
         >
           python books
-          <p className='text-sm pt-2 text-black/70'>
-            buy python book from zuri
-          </p>
         </a>
         <a
           href='https://background.zuri.team/'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
           id='pitch'
+          title=' we help in doing background checks for all your coders'
         >
           background check for coders
-          <p className='text-sm pt-2 text-black/70'>
-            we help in doing background checks for all your coders
-          </p>
         </a>
         <a
           href='https://books.zuri.team/design-rules'
+          title=' zuri helps in designing books for you'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
           id='pitch'
         >
           Design books
-          <p className='text-sm pt-2 text-black/70'>
-            zuri helps in designing books for you
-          </p>
         </a>
         <div className='flex justify-around w-[40%] mx-auto pt-8 pb-20'>
           <img
