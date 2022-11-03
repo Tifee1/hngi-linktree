@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
   const [user, setUser] = useState({
@@ -13,7 +14,24 @@ const Contact = () => {
     const { first_name, last_name, email, message } = user
 
     e.preventDefault()
-    if (!first_name || !last_name || !email || !message) return
+    if (!first_name || !last_name || !email || !message) {
+      toast.error('Please fill all input values')
+      return
+    }
+    toast.success('Form Submitted')
+    setUser({
+      first_name: '',
+      last_name: '',
+      email: '',
+      message: '',
+      check: 'false',
+    })
+  }
+
+  const handleChange = (e) => {
+    const name = e.target.id
+    const value = e.target.value
+    setUser({ ...user, [name]: value })
   }
 
   return (
@@ -24,7 +42,7 @@ const Contact = () => {
       </p>
 
       <div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className='md:grid grid-cols-2 gap-4'>
             <div>
               <label htmlFor='first_name' className='capitalize'>
@@ -35,6 +53,8 @@ const Contact = () => {
                 id='first_name'
                 className='block w-full  bg-transparent border border-black rounded-md my-2 py-1 px-2 placeholder:text-black/50'
                 placeholder='Enter Your First Name'
+                value={user.first_name}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -46,6 +66,8 @@ const Contact = () => {
                 id='last_name'
                 className='block w-full  bg-transparent border border-black rounded-md my-2 py-1 px-2 placeholder:text-black/50'
                 placeholder='Enter Your Last Name'
+                value={user.last_name}
+                onChange={handleChange}
               />
             </div>
           </div>
@@ -58,6 +80,8 @@ const Contact = () => {
               id='email'
               className='block w-full  bg-transparent border border-black rounded-md my-2 py-1 px-2 placeholder:text-black/50'
               placeholder='youremail@email.com'
+              value={user.email}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -65,11 +89,13 @@ const Contact = () => {
               message
             </label>
             <textarea
-              id='email'
+              id='message'
               cols='10'
               rows='5'
               placeholder='Send me a message and i will reply as soon as possible '
               className='block w-full  bg-transparent border border-black rounded-md my-2 py-1 px-2 placeholder:text-black/50 resize-none'
+              value={user.message}
+              onChange={handleChange}
             />
           </div>
           <div>

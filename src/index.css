@@ -13,8 +13,6 @@
   box-sizing: border-box;
 }
 body {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
   line-height: #222;
   font-size: 0.875rem;
 }

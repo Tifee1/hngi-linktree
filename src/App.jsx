@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Contact from './Contact'
 import Footer from './Footer'
 import Home from './Home'
-import { ToastContainer } from 're'
+import { ToastContainer } from 'react-toastify'
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
-      <ToastContainer />
+      <ToastContainer position='top-center' />
     </BrowserRouter>
   )
 }

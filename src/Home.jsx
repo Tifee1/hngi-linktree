@@ -26,13 +26,6 @@ const Home = () => {
         </p>
       </section>
       <section className='mt-10'>
-        <a
-          href='https://twitter.com/tifee01'
-          className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
-          id='btn__zuri'
-        >
-          twitter link
-        </a>
         <Link
           to='/contact'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
@@ -40,6 +33,13 @@ const Home = () => {
         >
           contact
         </Link>
+        <a
+          href='https://twitter.com/tifee01'
+          className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
+          id='btn__zuri'
+        >
+          twitter link
+        </a>
         <a
           href='http://books.zuri.team/'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
@@ -83,7 +83,6 @@ const Home = () => {
           />
         </div>
       </section>
-      <div className='bg-black/70 h-[1px] mt-5'></div>
     </main>
   )
 }
