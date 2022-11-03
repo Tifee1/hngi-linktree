@@ -107,6 +107,7 @@ const Contact = () => {
             You agree to providing your data to zuri who may contact you
           </div>
           <button
+            id='btn__submit'
             type='submit'
             className='bg-black text-white px-4 py-2 uppercase tracking-widest text-xl mt-4 rounded-md w-full hover:bg-black/70 transition-all ease-linear duration-[0.3s]'
           >
