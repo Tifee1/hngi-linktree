@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Home = () => {
   return (
     <main className='container max-w-5xl mx-auto grid my-10'>
@@ -31,6 +33,13 @@ const Home = () => {
         >
           twitter link
         </a>
+        <Link
+          to='/contact'
+          className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
+          id='contact'
+        >
+          contact
+        </Link>
         <a
           href='http://books.zuri.team/'
           className='w-full bg-white block text-center capitalize text-xl py-4 mb-3'
