@@ -104,7 +104,7 @@ const Contact = () => {
               id='check'
               className='mr-2 w-[20px] h-[20px]'
             />
-            You agree to providing your data to zuri who may contact you
+            You agree to providing your data to Boluwatife who may contact you
           </div>
           <button
             id='btn__submit'
